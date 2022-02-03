@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 97.5vw;
+}
+header{
+    width: 100%;
+}
+header img{
+    width: 100%;
+}
+main{
+    width: 700px;
+}
+#bck{
+    background-image: url("img/flash_img.png");
+    height: 400px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
