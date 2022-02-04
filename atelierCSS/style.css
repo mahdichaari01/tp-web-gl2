@@ -13,7 +13,9 @@ header img{
     width: 100%;
 }
 main{
-    width: 700px;
+    width: calc(700px);
+    margin-left: auto;
+    margin-right: auto;
 }
 #bck{
     background-image: url("img/flash_img.png");
@@ -25,3 +27,52 @@ nav ul{
     text-decoration: none;
     list-style: none;
 }
+nav ul li{
+    display: block;
+    color: white;
+    background-color: #8e2f28;
+    width: 20%;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+nav ul li:hover{
+    background-color: black;
+    background-image: url("img/rings.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+table{
+    width: 100%;;
+}
+tr{
+    width: 100%;
+}
+td{width: 20%;}
+td{
+    padding: 0 4px;
+}
+table tr td img{
+    width: 100%;
+}
+table .text td{
+    padding-top: 40px;
+    height: 50px;
+}
+#lesjrs{
+    color: #8e2f28;
+    font-size: 1.5em;
+}
+td p{
+    font-size: 0.7em;
+}
+#final{
+    text-align: center;
+}
+footer{
+    width: 100%;
+}
+footer img{
+    width: 100%;
+}
+
