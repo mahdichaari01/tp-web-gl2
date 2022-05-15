@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="recap.php" method="post">
+        <input type="text" name="name" id="name"><label for="name">Name:</label><br>
+        <input type="text" name="surname" id="surname"><label for="surname">SurName:</label><br>
+        <input type="number" name="nbr" id="nbr"><label for="nbr">nbrSand:</label><br>
+        <input type="text" name="adr" id="adr"><label for="adr">adresse:</label><br>
+        <label for="type">Choose a type:</label>
+        <select id="type" name="type">
+            <option value="viande">viande</option>
+            <option value="mayo">mayo</option>
+        </select><br>
+        <input type="checkbox" id="harissa" name="har" value="har">
+        <label for="harissa">marissa</label><br>    
+        <input type="submit">
+        </form>
+        
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Livraison Sandwiches</title>
+    </head>
+    <body>
+        <h1>Livraison rapide de sandwiches</h1>
+        <form enctype="multipart/form-data" action="recap.php" method="POST">
+            <div>
+                <input type="text" name="nom" placeholder="Nom" required />
+            </div>
+            <div>
+                <input
+                    type="text"
+                    name="prenom"
+                    placeholder="Prenom"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    type="number"
+                    name="nb"
+                    placeholder="Nombre de Sandwich"
+                    required
+                />
+            </div>
+            <div>
+                <input
+                    type="text"
+                    name="adresse"
+                    placeholder="Adresse"
+                    required
+                />
+            </div>
+            <div>
+                <select name="type" required>
+                    <option>Selectionner le type du sandwich</option>
+                    <option value="viande">Viande</option>
+                    <option value="poulet">Poulet</option>
+                    <option value="escalope">Escalope</option>
+                </select>
+            </div>
+            <div>Ingredients à ajouter:</div>
+            <div><input type="checkbox" name="harissa" />Harissa</div>
+            <div><input type="checkbox" name="salade" />Salade</div>
+            <div><input type="checkbox" name="mayo" />Mayo</div>
+            <div>CIN:</div>
+            <div><input type="file" name="cin" required /></div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </body>
+</html>
